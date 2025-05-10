@@ -196,6 +196,9 @@
   .mx-500 {
     margin-inline: calc(var(--spacing) * 500);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
