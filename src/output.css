@@ -259,6 +259,9 @@
   .resize {
     resize: both;
   }
+  .content-center {
+    align-content: center;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
