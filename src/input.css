@@ -4,10 +4,31 @@
   margin-inline: auto;
   padding-inline: 2rem;
 }
-@layer base {
-  font-face {
-    font-family: PlayfairDisplay;
+@theme {
+  --font-playfair-medium: "PlayfairDisplay Medium", serif;
+  --font-playfair-regular: "PlayfairDisplay Regular", serif;
+  --font-playfair-italic: "PlayfairDisplay Italic", serif;
+}
+@layer components {
+  .font-playfair-medium {
+    font-family: var(--font-playfair-medium);
+  }
+  .font-playfair-regular {
+    font-family: var(--font-playfair-regular);
+  }
+  .font-playfair-italic {
+    font-family: var(--font-playfair-italic);
+  }
+}
+
+/* @layer base {
+  @font-face {
+    font-family: "PlayfairDisplay medium";
     src: url("../public/fonts/PlayfairDisplay-MediumItalic.ttf")
       format("truetype");
   }
-}
+  @font-face {
+    font-family: PlayfairDisplay Regular;
+    src: url("../public/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  }
+} */
