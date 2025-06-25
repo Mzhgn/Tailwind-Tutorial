@@ -1,14 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 @import "tailwindcss";
 
-@utility container {
-  margin-inline: auto;
-  padding-inline: 2rem;
-}
-@theme {
-  --font-playfair-medium: "PlayfairDisplay Medium", serif;
-  --font-playfair-regular: "PlayfairDisplay Regular", serif;
-  --font-playfair-italic: "PlayfairDisplay Italic", serif;
-}
 @layer components {
   .font-playfair-medium {
     font-family: var(--font-playfair-medium);
@@ -20,15 +13,3 @@
     font-family: var(--font-playfair-italic);
   }
 }
-
-/* @layer base {
-  @font-face {
-    font-family: "PlayfairDisplay medium";
-    src: url("../public/fonts/PlayfairDisplay-MediumItalic.ttf")
-      format("truetype");
-  }
-  @font-face {
-    font-family: PlayfairDisplay Regular;
-    src: url("../public/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
-  }
-} */
